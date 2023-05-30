@@ -1,3 +1,80 @@
 /* =============
     Navigation
 ============= */
+
+nav{
+    display: none;
+    background-color: $black;
+    height: 100vh;
+    padding: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    @include lg{
+        background-color: $white;
+        display: block;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        width: 100%
+    }
+    div{
+        display: flex;
+        justify-content: flex-end;
+        button{
+            background-color: transparent;
+            border: none;
+            color: $white;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+    }
+    ul{
+        height: 100%;
+        padding-top: 20%;
+        @include lg{
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 0;
+        }
+        li{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+            text-align: right;
+            @include lg{
+                border-left: 1px solid $black;
+                margin-bottom: 0;
+                margin-left: 16px;
+                padding-left: 24px;
+            }
+            a:link,
+            a:visited {
+                color: $white;
+                font-size: 20px;
+                font-weight: 300;
+                text-decoration: none;
+                transition: 0.25s;
+                @include lg{
+                    color: $black;
+                }
+
+                &:hover,
+                &:active{
+                    color: $heather;
+                }
+
+
+            }
+            &:first-child{
+                border: none;
+            }
+        }
+    }
+
+}

@@ -1,3 +1,187 @@
 /* =============
     Typography
 ============= */
+.whyshark{
+    background-color: $lightgrey;
+    padding-top: 20px;
+    margin: 0 0 20px 0;
+
+    @include md{
+        margin: 30px 0 40px 0;
+    }
+
+    @include xl{
+        margin: 50px 0 60px 0;
+    }
+
+    .whyshark-title{
+        h2{
+            font-size: 60px;
+            color: #3C394A;
+            padding: 10px 0 10px 0;
+    
+            @include lg{
+                font-size: 70px;
+    
+            }
+    
+            @include xl{
+                font-size: 90px;
+            }
+        }
+    }
+
+    .whyshark-icons{
+
+        @include md{
+            display: grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas: 
+            ". articles ."
+            ;
+        }
+    
+        @include xl{
+            grid-template-columns: auto 1140px auto;
+        }
+    
+        @include xxl{
+            grid-template-columns: auto 1320px auto;
+        }
+
+
+        ul.shark-grid{
+
+            list-style: none;
+            padding-left: 0;
+
+            display: grid;
+            grid-template-columns: 100%;
+            gap: 15px;
+
+            @include md{
+                grid-area: shark;
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-areas: 
+                "a1 a1 a2 a2"
+                "a3 a3 a4 a4";
+               
+            }
+
+            @include lg{
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: 
+                ". a1 a1 a2 a2 ."
+                ". a3 a3 a4 a4 .";
+             
+            }
+
+            li{
+
+                .container{
+
+                    padding: 15px 0 35px 0;
+
+                    @include xl{
+                        grid-template-columns: 15px auto 15px;
+                    }
+
+                    h3{
+                        font-size: 32x;
+                        margin-bottom: 10px;
+                    }
+
+                    p{
+                        padding-bottom: 25px;
+                    }
+
+
+                }
+
+                &.shark-1{
+                    @include md{
+                        grid-area: a1;
+
+                    }
+
+                    h3{
+                        color: $iris;
+                    }
+
+                    p{
+                        color: #3C394A; 
+                    }
+
+                }
+
+                &.shark-2{
+                    @include md{
+                        grid-area: a2;
+                    }
+
+                    h3{
+                        color: $mauve;
+
+                    }
+
+                    p{
+                        color: #3C394A;
+                    }
+                }
+
+                &.shark-3{
+                    @include md{
+                        grid-area: a3;
+                    }
+
+                    h3{
+                        color: $mauve;
+
+                    }
+
+                    p{
+                        color: #3C394A;
+                    }
+
+                    
+                }
+
+                &.shark-4{
+                    @include md{
+                        grid-area: a4;
+                    }
+
+                    h3{
+                        color: $iris;
+                    }
+
+                    p{
+                        color: #3C394A; 
+                    }
+                    
+                }
+
+
+
+
+            }
+            
+        }
+
+
+
+
+
+    }
+
+   
+    
+
+
+    
+    
+    
+
+}
+

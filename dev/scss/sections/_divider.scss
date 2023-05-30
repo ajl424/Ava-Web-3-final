@@ -1,3 +1,79 @@
 /* =============
-    Typography
+    divider
 ============= */
+
+.divider{
+
+    margin: 15px;
+    
+
+    @include md{
+        margin: 30px 0 30px 0; 
+    }
+
+    @include md{
+        display:grid;
+        grid-template-columns: 15px 1fr 1fr 15px;
+        grid-template-areas: 
+        "purchase moneyback shipping"
+        ;
+    }
+
+    @include xl{
+        grid-template-columns: auto 570px 570 px auto;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 660px 660px auto;
+    }
+
+    .container{
+
+        @include xl{
+            grid-template-columns: 16px auto 16px;
+        }
+
+        &.purchase{
+         
+            margin-bottom: 15px;
+            @include md{
+                grid-area: purchase;
+                margin-bottom: 0;
+
+            }
+            
+
+            
+           
+        
+        }
+
+        &.moneyback{
+            margin-bottom: 15px;
+            @include md{
+                grid-area: moneyback;
+                margin-bottom: 0;
+            }
+
+            
+
+            
+        }
+
+        &.shipping{
+
+            margin-bottom: 15px;
+            @include md{
+                grid-area: shipping;
+                margin-bottom: 0;
+            }
+            
+
+            
+           
+        
+        }
+
+       
+    }
+}

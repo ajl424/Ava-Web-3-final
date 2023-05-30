@@ -13,20 +13,41 @@
   <body>
 
     <!--top menu-->
-    <header> 
-        <div>
+    <header class="header-container"> 
+        <div class="content">
+            <div class="logo">
+              <img src="img/Sharklogo.svg" alt="shark logo">
+            </div>
 
-          <img src="img/Sharklogo.svg" alt="shark logo">
-          <p> vacuums </p>
-          <p> parts and accessories </p>
-          <p> sales and offers </p>
-          <p> support </p>
-          <button> <img src="img/search.svg" alt="search icon"></button>
-          <img src="img/shoppingcart.svg" alt="shopping cart icon">
-          <img src="img/user.svg" alt="user icon">
-
+        <!--Mobile Nav Icon, Wont display on desktop and up-->
+        <div class="burger-container">
+            <button id="burger-btn">
+              <img src="img/hamburger.svg" alt="hamburger"> 
+            </button>
         </div>
+        <!--end mobile nav icon-->
 
+        <!-- menu alters between mobile/tablet and desktop-->
+        <nav id="main-menu">
+            <div class="hide-for-lg">
+                <button id="close-btn">
+                    <i class="fa-solid fa-xmark-large"></i>
+                </button>
+            </div>
+            <ul> 
+              <li><a href="html/checkout.html"> vacuums</a></li>
+              <li><a href="html/thank.html"> parts and accessories</a></li>
+              <li><a href="#"> sales and offers</a></li>
+              <li><a href="#"> support </a></li>
+              <li> <button> <img src="img/search.svg" alt="search icon"></button></li>
+              <li><img src="img/shoppingcart.svg" alt="shopping cart icon"></li>
+              <li><img src="img/user.svg" alt="user icon"></li>
+            </ul>
+          </nav>
+        <!--end nav-->
+        </div>
+    </header>
+      
     <!--top image-->
 
         <div> 
@@ -37,44 +58,273 @@
         </div>
 
      <!--divider-->
-        <div>
-          <img src="img/Ellipse 1.svg" alt="grey circle 1">
-          <img src="img/Ellipse 2.svg" alt="grey circle 2">
-          <img src="img/Ellipse 3.svg" alt="grey circle 3">
+        <div style="text-align: center;">
+          <img src="img/greycircle1.svg" alt="grey circle 1">
+          <img src="img/greycircle2.svg" alt="grey circle 2">
+          <img src="img/greycircle3.svg" alt="grey circle 3">
           <h2> Benefits of buying directly from shark</h2>
-          <button> <img src="img/pricetag.svg"> 10% off first purchase when sign up for email  </button>
-          <button> <img src="img/history.svg"> 60 day money back guarantee  </button>
-          <button> <img src="img/shippingtruck.svg"> free shipping on select products </button>
+        </div>
 
-        </div> 
+      <div class="divider"> 
+
+        <div class="purchase container">
+          <div class="content"> 
+            <button> <img src="img/pricetag.svg" alt="price tag"> 10% off first purchase when sign up for email  </button>
+          </div>
+        </div>
+
+         <div class="moneyback container">
+            <div class="content"> 
+              <button> <img src="img/history.svg" alt="history"> 60 day money back guarantee  </button>
+            </div>
+          </div>
+
+          <div class="shipping container">
+            <div class="content"> 
+              <button> <img src="img/shippingtruck.svg" alt="shipping truck"> free shipping on select products </button>
+        
+            </div>
+          </div> 
+        </div>
 
       <!--whyshark-->
+      <section class="whyshark">
 
+        <div class="whyshark-title"> 
+          <div class="container">
+            <div class="content">
+              <h2> Why Shark? </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="whyshark-icons">
+
+            <ul class="shark-grid content spacing"> 
+
+              <li class="shark-1"> 
+                <img src="img/purplebubbles.svg" alt="purple bubble icon"> <h3> Deep Cleaning</h3> <p> From the nonstop hair removal of our self-cleaning brushroll to the powerful performace of our orginal bristle brush, you've got vacuum cleaners that seriously deep-clean. </p>
+              </li>
+
+              <li class="shark-2">
+
+                <img src="img/darkpurpleflower.svg" alt="darkpurple flower"><h3> Anti-Allergen </h3> <p> A HEPA filter plus a sealed system keep dust and allergens inside the vacuum, and out of the air you breathe. </p>
+              </li>
+
+              <li class="shark-3">
+
+                <img src="img/darkpurplepaw.svg" alt="darkpurple paw"> <h3> Self-cleaning brushroll </h3>  <p> Removes pet hair and long hair from the brushroll-no more hair wrap.</p>
+              </li>
+
+              <li class="shark-4">
+
+                <img src="img/purplemuscle.svg" alt="muscle icon"> <h3> Powerful suction </h3> <p> Every Shark upright vacuum delivers powerful suction for deep cleaning on carpets and thorough pickup on hard floors. </p>
+              </li>
+            </ul>
+        </div>
+      </section>
+
+        <!--three vacuums-->
+        <section class="threevacuums"> 
+          <div>
+            <div> 
+              <img width="280" src="img/uprightvscuums.png" alt="upright vacuums"> 
+              <img src="img/purpleboxarrow.svg" alt="purple arrow">
+              <h2> Upright Vacuums</h2>
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/greystar.svg" alt="grey star"> <p> 4,789 reviews</p>
+              
+              <button>shop all</button>
+            </div>
+
+            <div> 
+             <img width="280" src="img/cordlessvacuum.png" alt="cordlessvacuum"> 
+             <img src="img/purpleboxarrow.svg" alt="purple arrow">
+              <h2> Cordless Vacuums</h2>
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/halfcolorstar.svg" alt="half color star"> <p> 3,421 reviews</p>
+              <button>shop all</button>
+            </div>
+
+            <div> 
+              <img width="280" src="img/handheldvacuums.png" alt="hand held vacuum"> 
+              <img src="img/purpleboxarrow.svg" alt="purple arrow">
+              <h2> Handheld Vacuums </h2>
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/purplestar.svg" alt="purple star">
+              <img src="img/halfcolorstar.svg" alt="half color star">
+              <img src="img/greystar.svg" alt="grey star"> <p> 1,203 reviews</p>
+            <button>shop all</button>
+            </div>
+        </div>
+      </section>
+        <!-- second image-->
         <div> 
-          <h1> Why Shark? </h1>
-          <img src="img/purplebubbles.svg" alt="purple bubble icon">
-          <h3> Deep Cleaning</h3>
-          <p> From the nonstop hair removal of our self-cleaning brushroll to the powerful performace of our orginal bristle brush, you've got vacuum cleaners that seriously deep-clean. </p>
-
-          <h3> Anti-Allergen </h3>
-          <img src="img/darkpurpleflower.svg" alt="darkpurple flower">
-          <p> A HEPA filter plus a sealed system keep dust and allergens inside the vacuum, and out of the air you breathe. </p>
-
-          <h3> Self-cleaning brushroll </h3>
-          <img src="img/darkpurplepaw.svg" alt="darkpurple paw">
-          <p> Removes pet hair and long hair from the brushroll-no more hair wrap.</p>
-          
-          <h3> Powerful suction </h3>
-          <img src="img/purplemuscle.svg" alt="muscle icon">
-          <p> Every Shark upright vacuum delivers powerful suction for deep cleaning on carpets and thorough pickup on hard floors. </p>
+          <img class="large-images" src="img/secondimage.jpeg" alt="second image">
+          <h1> Parts & Accessories </h1>
+          <button>shop now</button>
 
 
         </div>
 
+      <!--petandnonpet-->
+        <section class="petandnonpet">
+
+      
+            <div class="container"> 
+              <div class= "content">
+                <h2> Choose the package that works best for you.</h2>
+              </div>
+            </div>
+     
+          <div class="pet-choices">
+            <ul class="box-grid content-spacing">
+
+              <li class="box-1 grey-box"> 
+                <img width="290" src="img/truepetvaccum.png" alt="truepet vaccum">
+                <div class="container">
+                  <div class="content">
+                    <h2> Shark Stratos Upright Vacuum with TruePet upgrade and free Shark Steam Mop</h2>
+                   <img src="img/darkpurplestar.svg" alt=" dark purple star">
+                    <img src="img/darkpurplestar.svg" alt="dark purple star">
+                    <img src="img/darkpurplestar.svg" alt="dark purple star">
+                    <img src="img/darkpurplestar.svg" alt="dark purple star">
+                    <img src="img/halfstar2.svg" alt="half star2"> <p> 4.6 (583)</p>
+
+                    <p>Most advanced technologies combine with pure cleaning power </p>
+                   <p>The DuoClean, PowerFins, HairPro nozzle, a self-cleaning brush roll, and Odor Neutralizer Technology are just the start </p>
+                    <p>  <strong>With 6 additional accessories </strong> </p> 
+                    <p> 3 Brushes, Odor Cartridge replacement, Accessory bag, and Duster Crevice tool included</p>
+                    <p> See all</p> <img src="img/darkpurplearrow.svg" alt="dark purple arrow">
+                    <p> Bonus: MutliFLEX Under-Appliance Wand and Shark Steam Mop</p>
+                    <button> $499.80</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          
+
+            <ul class="box-grid content-spacing"> 
+            
+              <li class="box-2 grey-box"> 
+                <img width="130" src="img/sharknonpetvaccuum.png" alt="nontruepet vaccum">
+                  <div class="container">
+                    <div class="content">
+                      <h2> Shark Stratos Upright Vacuum</h2>
+                      <img src="img/darkpurplestar.svg" alt=" dark purple star">
+                      <img src="img/darkpurplestar.svg" alt="dark purple star">
+                      <img src="img/darkpurplestar.svg" alt="dark purple star">
+                      <img src="img/darkpurplestar.svg" alt="dark purple star">
+                      <img src="img/halfstar2.svg" alt="half star2">  <p> 4.5 (481)</p>
+            
+                      <p>Most advanced technologies combine with pure cleaning power </p>
+                     <p>The DuoClean, PowerFins, HairPro nozzle, a self-cleaning brush roll, and Odor Neutralizer Technology are just the start </p>
+                      <p>  <strong> With 6 additional accessories </strong> </p> 
+                      <p> 2 Tools, 1 Odor Cartridge, and Self-Cleaning Brushroll </p>
+                      <p> See all</p> <img src="img/darkpurplearrow.svg" alt="dark purple arrow">
+                      <p> $130 OFF with PROMO CODE STRATOS130</p>
+                      <button> $429.00</button>
+
+        
+                    </div>
+                  </div>
+              </li>
+            </ul>
+          </div> 
+        </section>
+
+        <!--footer -->
+        <footer class="container footer-content"> 
+          <div class="content">
+
+            <div class="products"> 
+              <ul> 
+
+                <li class="border-bottom"> 
+                  <h3> Products </h3>
+                  <p>Shop all products </p>
+                  <p> Upright vacuums</p>
+                  <p> Cordless vacuums</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="support"> 
+              <ul>
+
+                <li class="border-bottom">
+                  <h3> Support </h3>
+                  <p> Support & FAQs</p>
+                  <p> Warranty Information</p>
+                  <p> My Account</p>
+                </li>
+              </ul>
+            </div>
+
+            
+
+            <div class="about"> 
+              <div>
+                <ul>
+  
+                  <li class="border-bottom"> 
+                    <h3> About SharkNinja </h3>
+                    <p> Shark Brand</p>
+                    <p> Media Inquiries</p>
+                    <p> Locations</p>
+                   </li>
+                </ul>
+              </div>
+
+              <h3> Join the conversation</h3>
+              
+              <ul> 
+                <li>
+                  <a href="#"> <img src="img/facebook-f.svg" alt="facebook icon">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#"> <img src="img/youtube.svg" alt="youtube icon">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#"> <img src="img/instagram.svg" alt="insta icon">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#"> <img src="img/twitter.svg" alt="twitter icon">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#"> <img src="img/pintrest.svg" alt="pintrest icon">
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </footer>
+
+
+
+        
+
          
 
 
-    </header>
+   
 
 
 

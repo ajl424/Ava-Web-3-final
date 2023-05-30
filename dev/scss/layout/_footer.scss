@@ -1,3 +1,196 @@
 /* =============
     Footer
 ============= */
+footer{
+
+    background-color: white;
+    padding-top: 20px;
+
+    li{
+        list-style:none;
+    }
+
+
+    
+
+    .content{
+        
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "products support"
+            "products about";
+
+            gap: 20px;
+        }
+
+
+        @include lg{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+            "products support about";
+        }
+
+        h3{
+            font-size: 18px;
+            color:#676573;
+        }
+
+        p{
+        
+            font-size: 18px;
+            color:#676573;
+            
+        }
+
+        .products .support{
+
+            ul{
+                list-style: none;
+                padding:0;
+
+                img{
+                    padding-right: 10px;
+                }
+
+                h3{
+                    font-size: 18px;
+                    color:#676573;
+                }
+        
+                p{
+                
+                    font-size: 18px;
+                    color:#676573;
+                    
+                    span{
+                        display: inline-block;
+                    }
+                }
+
+                
+
+                a{
+                    color: #676573;
+                }
+
+                .border-bottom{
+                    border-bottom: 2px solid #0B0B0B; 
+                    margin: 25px 0 25px 0;
+                    
+                }
+            }
+
+        }
+
+        .products{
+
+            @include md{
+                grid-area: products;
+            }
+
+            @include lg{
+                text-align: left; 
+            }
+
+            ul li{
+                display: inline-block;
+
+                a{
+
+                    color: $white;
+
+                    i{
+                        font-size: 30px;
+                        padding-right: 15px;
+
+                    }
+                }
+
+                @include lg{
+
+                    &.last-of-type{
+                        a i{
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .support{
+
+            @include md{
+                grid-area: support;
+            }
+
+            @include lg{
+                text-align: center; 
+            }
+
+            ul li{
+                display: inline-block;
+
+                a{
+
+                    color: $white;
+
+                    i{
+                        font-size: 30px;
+                        padding-right: 15px;
+
+                    }
+                }
+
+                @include lg{
+
+                    &.last-of-type{
+                        a i{
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+      
+        
+
+        .about{
+
+            @include md{
+                grid-area: about;
+            }
+
+            @include lg{
+                text-align: right; 
+            }
+
+            ul li{
+                display: inline-block;
+
+                a{
+
+                    color: $white;
+
+                    i{
+                        font-size: 30px;
+                        padding-right: 15px;
+
+                    }
+                }
+
+                @include lg{
+
+                    &.last-of-type{
+                        a i{
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+
+}

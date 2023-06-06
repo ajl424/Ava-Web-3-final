@@ -1,0 +1,133 @@
+/* =============
+    Typography
+============= */
+.checkout{
+
+    background-color: white;
+    ul{
+
+        padding: 20px;
+        margin: 30px;
+        margin-left: 30px;
+        background-color: white;
+       
+       
+        @include md{
+            grid-area: checkout;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: 
+            "contact contact subtotal subtotal";
+        }
+
+        @include lg{
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "contact contact subtotal subtotal";
+        }
+
+        @include xl{
+            grid-template-columns: auto 570px 570 px auto;
+        }
+    
+        @include xxl{
+            grid-template-columns: auto 660px 660px auto;
+        }
+
+
+        li{
+            list-style: none;
+            margin-left: 30px;
+        }
+
+        input{
+            display: flex;
+            padding: 10px 100px;
+            border: 1px $middlegrey; 
+            background-color: white;
+            color: #C4C3C8;
+            margin-bottom: 15px; 
+
+        }
+
+        input{
+            background-color: white; 
+            color: #676573;
+            padding: 10px 100px;
+            border: 1px solid #676573;
+            display: flex;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border-radius: 6px;
+            
+        }
+
+        
+    }
+
+    .container{
+
+        @include xl{
+            grid-template-columns: 16px auto 16px;
+        }
+
+        &.not{
+         
+            margin-bottom: 15px;
+            @include md{
+                grid-area: contact;
+                margin-bottom: 0;
+
+            }
+            
+
+            
+           
+        
+        }
+
+        &.subtotal{
+            margin-bottom: 15px;
+            @include md{
+                grid-area: subtotal;
+                margin-bottom: 0;
+            }
+
+            
+
+            
+        }
+
+    
+
+       
+
+       
+    }
+
+    .contact{
+        @include md{
+            grid-area: contact;
+        }
+
+        form{
+            display: flex;
+            flex-flow: wrap;
+            justify-content: end;
+
+            
+        
+            ::placeholder{ /*Chrome, Firefox, Opera, Safari 10.1+ */
+                color:  #676573;
+                opacity: 1;
+        
+            }
+        
+            ::-ms-input-placeholder{ /* Microsoft.Edge */
+                color: #676573;
+            }
+    
+    }
+        }
+}
+

@@ -86,7 +86,7 @@ button{
 .grey-box{
     border:1px solid $lightgrey;
     background-color: $lightgrey;
-    border-radius: 2px;
+    border-radius: 9px;
      
     h2{
         color: #3C394A ;
@@ -96,52 +96,55 @@ button{
     
 }
 
-.checkout{
 
-    background-color: white;
-    ul{
+.threebutton{
+    border: 1px solid white;
+    background-color: $iris;
+    color: $lilac;
+    padding: 10px 10px;
+    border-radius: 9px;
 
-        padding: 20px;
-        margin: 30px;
-        margin-left: 30px;
-        background-color: lime;
-        @include sm{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+    &:hover{
+        background-color: $plum;
+           text-decoration: underline;
+           transition: 0.5s;
+   }
 
-        }
-        @include md{
-            display: grid;
-            grid-template-colums: 1fr 1fr;
-            padding-left: 50px;
-
-        }
-
-        li{
-            list-style: none;
-            margin-left: 30px;
-        }
-
-        input{
-            display: flex;
-            padding: 10px 100px;
-            border: 1px #C4C3C8; 
-            background-color: white;
-            color: #C4C3C8;
-            margin-bottom: 15px; 
-
-        }
-    }
+   display: flex; 
+   flex-wrap: wrap; 
 }
 
-.content-spacing{
-    padding-top: 30px;
+.search {
+    display: block;
+    width: 120%;
+    border: none;
+    background-color:$iris;
+    color:$lilac;
+    padding: 6px 30px;
+    cursor: pointer;
+    text-align: center;
+    float:right;
+
+   
+  }
+
+.grey-boxtwo{
+    border:1px solid $lightgrey;
+    background-color: $lightgrey;
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 120%;
+     
+    
+    
+    
 }
 
-.content-spacing{
-    ul{
-        padding-top: 30px;
-    }
+.border-bottom{
+    border-bottom: 2px solid #C4C3C8; 
+    margin: 25px 0 25px 0;
 }
 
 
+  
+  

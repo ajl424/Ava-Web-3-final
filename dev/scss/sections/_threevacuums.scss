@@ -2,8 +2,116 @@
     Typography
 ============= */
 
+
 .threevacuums{
 
+    margin: 15px;
     padding-left: 20px;
+    display: grid; 
+    @include md{
+        margin: 30px 0 30px 0; 
+    }
 
+    @include md{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "upright cordless handheld"
+        ;
+    }
+
+    @include xl{
+        grid-template-columns: auto 570px 570 px auto;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 660px 660px auto;
+    }
+
+  
+
+    .container{
+
+        @include xl{
+            grid-template-columns: 16px auto 16px;
+        }
+
+        &.upright{
+         
+            margin-bottom: 15px;
+            @include md{
+                grid-area: upright;
+                margin-bottom: 0;
+
+            }
+
+            h2{
+                color:#3C394A;
+            }
+            
+            p{
+                color: #86858C;
+            }
+
+            
+           
+        
+        }
+
+        &.cordless{
+            margin-bottom: 15px;
+            @include md{
+                grid-area: cordless;
+                margin-bottom: 0;
+            }
+
+            h2{
+                color:#3C394A;
+            }
+            
+            p{
+                color: #86858C;
+            }
+
+            
+        }
+
+        &.handheld{
+
+            margin-bottom: 15px;
+            @include md{
+                grid-area: handheld;
+                margin-bottom: 0;
+            }
+            
+            h2{
+                color:#3C394A;
+            }
+            
+            p{
+                color: #86858C;
+            }
+           
+        
+        }
+
+       
+    }
+}
+
+.threebutton{
+    border: 1px solid white;
+    background-color: $iris;
+    display: block;
+    color: $lilac;
+    padding: 10px 10px;
+    border-radius: 9px;
+    width: 30%;
+    text-align: center;
+
+    &:hover{
+        background-color: $plum;
+           text-decoration: underline;
+           transition: 0.5s;
+   }
 }

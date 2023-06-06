@@ -1,0 +1,91 @@
+/* =============
+    Typography
+============= */
+.grey-box-three{
+    border:1px solid $lightgrey;
+    background-color: $lightgrey;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px 10px;
+    display: center;
+    
+     
+    
+}
+
+.thank{
+    margin: 15px;
+
+    @include md{
+        margin: 30px 0 30px 0; 
+    }
+
+    @include md{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "recieved shipped delivered"
+        ;
+    }
+
+    @include xl{
+        grid-template-columns: auto 570px 570 px auto;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 660px 660px auto;
+    }
+
+}
+
+.container{
+
+    @include xl{
+        grid-template-columns: 16px auto 16px;
+    }
+
+    &.recieved{
+     
+        margin-bottom: 15px;
+        @include md{
+            grid-area: recieved;
+            margin-bottom: 0;
+
+        }
+        
+
+        
+       
+    
+    }
+
+    &.shipped{
+        margin-bottom: 15px;
+        @include md{
+            grid-area: shipped;
+            margin-bottom: 0;
+        }
+
+        
+
+        
+    }
+
+    &.delivered{
+
+        margin-bottom: 15px;
+        @include md{
+            grid-area:delivered;
+            margin-bottom: 0;
+        }
+        
+
+        
+       
+    
+    }
+
+   
+
+   
+}

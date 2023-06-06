@@ -4,7 +4,30 @@
 
 .petandnonpet{
     margin: 0 0 20px 0;
+
     
+    p{
+        color: #676573;
+        font-size: 18px;
+    }
+    
+    h3{
+        color: #3C394A;
+        font-size: 20px;
+        
+    }
+
+    h4{
+        color: #676573; 
+        font-size: 18px;
+    }
+
+    h5{
+        color: $plum; 
+        font-size: 16px;
+    }
+
+
 
     @include md{
         margin: 30px 0 40px 0;
@@ -12,6 +35,23 @@
 
     @include xl{
         margin: 50px 0 60px 0;
+    }
+
+    .petbutton{
+        border: 1px solid $lightgrey;
+        width: 40%;
+        background-color: $plum;
+        color: $lilac;
+        padding: 10px 10px;
+        border-radius: 9px;
+        font-size: 40px;
+        text-align: center;
+    
+        &:hover{
+            background-color: $iris;
+               text-decoration: underline;
+               transition: 0.5s;
+       }
     }
 
     
@@ -24,7 +64,7 @@
             display: grid;
             grid-template-columns: 15px auto 15px;
             grid-template-areas: 
-            ". articles .";
+            " box-1 box-2";
             
         }
 
@@ -48,22 +88,22 @@
             @include md{
                 grid-area: petnonpet;
                 display: grid;
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(4,1fr);
                 grid-template-areas: 
-                "a1 a1 a2 a2";
+                "box-1 box-1 box-2 box-2";
             }
 
             @include lg{
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 grid-template-areas: 
-                "a1 a1 a2 a2";
+                "box-1 box-1 box-2 box-2";
             }
 
             li{ 
 
                 .container{
 
-                    padding: 15px 0 35px 0;
+                    padding: 20px;
 
                     @include xl{
                         grid-template-columns: 15px auto 15px;
@@ -84,7 +124,7 @@
 
             
                 &.box-1{
-                    float: left;
+                    float:left;
                     margin-bottom: 15px;
                     @include md{
                         grid-area: box-1;
@@ -96,10 +136,13 @@
                         text-align: left; 
                         
                      }  
+                    
+                     
+                     
                 }
 
                 &.box-2{
-                    float: right;
+                    float:right;
                     
                     margin-bottom: 15px;
                     @include md{

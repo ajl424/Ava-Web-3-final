@@ -19,32 +19,32 @@
               <img src="img/Sharklogo.svg" alt="shark logo">
             </div>
 
-        <!--Mobile Nav Icon, Wont display on desktop and up-->
-        <div class="burger-container">
+      <!--Mobile Nav Icon, Wont display on desktop and up-->
+          <div class="burger-container">
             <button id="burger-btn">
               <img src="img/hamburger.svg" alt="hamburger"> 
             </button>
-        </div>
+          </div>
         <!--end mobile nav icon-->
 
-        <!-- menu alters between mobile/tablet and desktop-->
-        <nav id="main-menu">
-            <div class="hide-for-lg">
-                <button id="close-btn">
-                    <i class="fa-solid fa-xmark-large"></i>
-                </button>
-            </div>
+      <!-- menu alters between mobile/tablet and desktop-->
+          <nav id="main-menu">
+              <div class="hide-for-lg">
+                  <button id="close-btn">
+                      <i class="fa-solid fa-xmark-large"></i>
+                  </button>
+              </div>
             <ul> 
               <li><a href="html/checkout.html"> vacuums</a></li>
               <li><a href="html/thank.html"> parts and accessories</a></li>
               <li><a href="#"> sales and offers</a></li>
               <li><a href="#"> support </a></li>
-              <li> <button> <img src="img/search.svg" alt="search icon"></button></li>
+              <li> <button class="search"> <img src="img/search.svg" alt="search icon"></button></li>
               <li><img src="img/shoppingcart.svg" alt="shopping cart icon"></li>
               <li><img src="img/user.svg" alt="user icon"></li>
             </ul>
           </nav>
-        <!--end nav-->
+          <!--end nav-->
         </div>
     </header>
       
@@ -69,19 +69,19 @@
 
         <div class="purchase container">
           <div class="content"> 
-            <button> <img src="img/pricetag.svg" alt="price tag"> 10% off first purchase when sign up for email  </button>
+            <button class="button"> <img src="img/pricetag.svg" alt="price tag"> <span>10% off first purchase when sign up for email</span>  </button>
           </div>
         </div>
 
          <div class="moneyback container">
             <div class="content"> 
-              <button> <img src="img/history.svg" alt="history"> 60 day money back guarantee  </button>
+              <button class="button"> <img src="img/history.svg" alt="history"> <span>60 day money back guarantee</span> </button>
             </div>
           </div>
 
           <div class="shipping container">
             <div class="content"> 
-              <button> <img src="img/shippingtruck.svg" alt="shipping truck"> free shipping on select products </button>
+              <button class="button"> <img src="img/shippingtruck.svg" alt="shipping truck"> <span> free shipping on select products</span> </button>
         
             </div>
           </div> 
@@ -125,9 +125,10 @@
       </section>
 
         <!--three vacuums-->
-        <section class="threevacuums"> 
-          <div>
-            <div> 
+        <div class="threevacuums"> 
+
+          <div class="upright container">
+            <div class="content"> 
               <img width="280" src="img/uprightvscuums.png" alt="upright vacuums"> 
               <img src="img/purpleboxarrow.svg" alt="purple arrow">
               <h2> Upright Vacuums</h2>
@@ -136,35 +137,45 @@
               <img src="img/purplestar.svg" alt="purple star">
               <img src="img/purplestar.svg" alt="purple star">
               <img src="img/greystar.svg" alt="grey star"> <p> 4,789 reviews</p>
-              
-              <button>shop all</button>
+              <div>
+                <button class="threebutton">shop all</button>
+              </div>
+            </div>
+          </div>
+
+            <div class="cordless container"> 
+              <div class="content">
+                <img width="280" src="img/cordlessvacuum.png" alt="cordlessvacuum"> 
+                <img src="img/purpleboxarrow.svg" alt="purple arrow">
+                <h2> Cordless Vacuums</h2>
+                <img src="img/purplestar.svg" alt="purple star">
+                <img src="img/purplestar.svg" alt="purple star">
+                <img src="img/purplestar.svg" alt="purple star">
+                <img src="img/purplestar.svg" alt="purple star">
+                <img src="img/halfcolorstar.svg" alt="half color star"> <p> 3,421 reviews</p>
+                <div> 
+                  <button class="threebutton">shop all</button>
+                </div>
+              </div>
             </div>
 
-            <div> 
-             <img width="280" src="img/cordlessvacuum.png" alt="cordlessvacuum"> 
-             <img src="img/purpleboxarrow.svg" alt="purple arrow">
-              <h2> Cordless Vacuums</h2>
-              <img src="img/purplestar.svg" alt="purple star">
-              <img src="img/purplestar.svg" alt="purple star">
-              <img src="img/purplestar.svg" alt="purple star">
-              <img src="img/purplestar.svg" alt="purple star">
-              <img src="img/halfcolorstar.svg" alt="half color star"> <p> 3,421 reviews</p>
-              <button>shop all</button>
-            </div>
-
-            <div> 
-              <img width="280" src="img/handheldvacuums.png" alt="hand held vacuum"> 
-              <img src="img/purpleboxarrow.svg" alt="purple arrow">
-              <h2> Handheld Vacuums </h2>
-              <img src="img/purplestar.svg" alt="purple star">
-              <img src="img/purplestar.svg" alt="purple star">
-              <img src="img/purplestar.svg" alt="purple star">
-              <img src="img/halfcolorstar.svg" alt="half color star">
-              <img src="img/greystar.svg" alt="grey star"> <p> 1,203 reviews</p>
-            <button>shop all</button>
+            <div class="handheld container">
+              <div class="content"> 
+                <img width="280" src="img/handheldvacuums.png" alt="hand held vacuum"> 
+                <img src="img/purpleboxarrow.svg" alt="purple arrow">
+                <h2> Handheld Vacuums </h2>
+                <img src="img/purplestar.svg" alt="purple star">
+                <img src="img/purplestar.svg" alt="purple star">
+                <img src="img/purplestar.svg" alt="purple star">
+                <img src="img/halfcolorstar.svg" alt="half color star">
+                <img src="img/greystar.svg" alt="grey star"> <p> 1,203 reviews</p>
+                  <div> 
+                    <button class="threebutton"> shop all</button>
+                  </div>
+              </div>
             </div>
         </div>
-      </section>
+
         <!-- second image-->
         <div> 
           <img class="large-images" src="img/secondimage.jpeg" alt="second image">
@@ -188,36 +199,47 @@
             <ul class="box-grid content-spacing">
 
               <li class="box-1 grey-box"> 
-                <img width="290" src="img/truepetvaccum.png" alt="truepet vaccum">
+                <div style="text-align: center;">
+                  <img width="290" src="img/truepetvaccum.png" alt="truepet vaccum">
+                </div>
+
                 <div class="container">
                   <div class="content">
-                    <h2> Shark Stratos Upright Vacuum with TruePet upgrade and free Shark Steam Mop</h2>
-                   <img src="img/darkpurplestar.svg" alt=" dark purple star">
+                    <div style="text-align: center;">
+                      <h3> Shark Stratos Upright Vacuum with TruePet upgrade and free Shark Steam Mop</h3>
+                    </div>
+                    <img src="img/darkpurplestar.svg" alt=" dark purple star">
                     <img src="img/darkpurplestar.svg" alt="dark purple star">
                     <img src="img/darkpurplestar.svg" alt="dark purple star">
                     <img src="img/darkpurplestar.svg" alt="dark purple star">
                     <img src="img/halfstar2.svg" alt="half star2"> <p> 4.6 (583)</p>
 
                     <p>Most advanced technologies combine with pure cleaning power </p>
-                   <p>The DuoClean, PowerFins, HairPro nozzle, a self-cleaning brush roll, and Odor Neutralizer Technology are just the start </p>
-                    <p>  <strong>With 6 additional accessories </strong> </p> 
+                   <h4>The DuoClean, PowerFins, HairPro nozzle, a self-cleaning brush roll, and Odor Neutralizer Technology are just the start </h4>
+                    <h4>  <strong>With 6 additional accessories </strong> </h4> 
+                    <div class="border-bottom"></div>
                     <p> 3 Brushes, Odor Cartridge replacement, Accessory bag, and Duster Crevice tool included</p>
+                    <div class="border-bottom"></div>
                     <p> See all</p> <img src="img/darkpurplearrow.svg" alt="dark purple arrow">
-                    <p> Bonus: MutliFLEX Under-Appliance Wand and Shark Steam Mop</p>
-                    <button> $499.80</button>
+                    <h5> Bonus: MutliFLEX Under-Appliance Wand and Shark Steam Mop</h5>
+                    <div style="text-align: center;">
+                      <button class="petbutton"> $499.80</button>
+                    </div>
                   </div>
                 </div>
               </li>
-            </ul>
-          
 
-            <ul class="box-grid content-spacing"> 
-            
               <li class="box-2 grey-box"> 
-                <img width="130" src="img/sharknonpetvaccuum.png" alt="nontruepet vaccum">
+                <div style="text-align: center;">
+                  <img width="113" src="img/sharknonpetvaccuum.png" alt="nontruepet vaccum">
+                </div>
+                
                   <div class="container">
                     <div class="content">
-                      <h2> Shark Stratos Upright Vacuum</h2>
+                      <div style="text-align: center;">
+                        <h3> Shark Stratos Upright Vacuum</h3>
+                      </div>
+
                       <img src="img/darkpurplestar.svg" alt=" dark purple star">
                       <img src="img/darkpurplestar.svg" alt="dark purple star">
                       <img src="img/darkpurplestar.svg" alt="dark purple star">
@@ -225,19 +247,23 @@
                       <img src="img/halfstar2.svg" alt="half star2">  <p> 4.5 (481)</p>
             
                       <p>Most advanced technologies combine with pure cleaning power </p>
-                     <p>The DuoClean, PowerFins, HairPro nozzle, a self-cleaning brush roll, and Odor Neutralizer Technology are just the start </p>
-                      <p>  <strong> With 6 additional accessories </strong> </p> 
+                     <h4>The DuoClean, PowerFins, HairPro nozzle, a self-cleaning brush roll, and Odor Neutralizer Technology are just the start </h4>
+                      <h4>  <strong> With 6 additional accessories </strong> </h4> 
+                      <div class="border-bottom"></div>
                       <p> 2 Tools, 1 Odor Cartridge, and Self-Cleaning Brushroll </p>
+                      <div class="border-bottom"></div>
                       <p> See all</p> <img src="img/darkpurplearrow.svg" alt="dark purple arrow">
-                      <p> $130 OFF with PROMO CODE STRATOS130</p>
-                      <button> $429.00</button>
-
-        
+                      <h5> $130 OFF with PROMO CODE STRATOS130</h5>
+                      <div style="text-align: center;">
+                        <button class="petbutton"> $429.00</button>
+                      </div>
                     </div>
                   </div>
               </li>
+
             </ul>
-          </div> 
+          </div>
+        
         </section>
 
         <!--footer -->

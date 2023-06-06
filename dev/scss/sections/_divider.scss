@@ -6,14 +6,34 @@
 
     margin: 15px;
     
+    .button{
+        border: 1px solid white;
+        background-color: $iris;
+        color: $lilac;
+        padding: 20px 20px;
+        border-radius: 9px;
+    
+        &:hover{
+            background-color: $plum;
+               text-decoration: underline;
+               transition: 0.5s;
+       }
+    
+       display: flex; 
+       flex-wrap: wrap; 
+       justify-content: center;
+    }
 
+    .img{
+        text-align: center;
+    }
     @include md{
         margin: 30px 0 30px 0; 
     }
 
     @include md{
         display:grid;
-        grid-template-columns: 15px 1fr 1fr 15px;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
         "purchase moneyback shipping"
         ;
@@ -73,6 +93,8 @@
            
         
         }
+
+       
 
        
     }

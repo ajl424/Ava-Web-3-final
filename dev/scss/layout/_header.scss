@@ -8,10 +8,16 @@
     width: 100%;
     background-color: $white;
 
+    .headerfont{
+        font-size: 20px; 
+        text-decoration: none;
+    
+    }
+
     .content{
 
         display: grid;
-        grid-template-columns: 50% auto;
+        grid-template-columns: 20% auto;
         grid-template-areas: "logo burger";
 
         @include lg{
@@ -46,3 +52,5 @@
     }
 
 }
+
+

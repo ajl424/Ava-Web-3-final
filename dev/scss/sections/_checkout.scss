@@ -3,13 +3,14 @@
 ============= */
 .checkout{
 
+    grid-area: contact;
     background-color: white;
+    
     ul{
 
         padding: 20px;
-        margin: 30px;
-        margin-left: 30px;
         background-color: white;
+
        
        
         @include md{
@@ -20,35 +21,22 @@
             "contact contact subtotal subtotal";
         }
 
-        @include lg{
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas: 
-            "contact contact subtotal subtotal";
-        }
-
+        
         @include xl{
             grid-template-columns: auto 570px 570 px auto;
+            margin: 30px;
         }
     
         @include xxl{
             grid-template-columns: auto 660px 660px auto;
+            margin: 30px;
         }
 
 
         li{
             list-style: none;
-            margin-left: 30px;
         }
-
-        input{
-            display: flex;
-            padding: 10px 100px;
-            border: 1px $middlegrey; 
-            background-color: white;
-            color: #C4C3C8;
-            margin-bottom: 15px; 
-
-        }
+        
 
         input{
             background-color: white; 
@@ -59,6 +47,16 @@
             margin-bottom: 15px;
             font-size: 16px;
             border-radius: 6px;
+            display: flex; 
+            
+            @include lg{
+                width:60%;
+            }
+            
+        }
+
+        button{
+            flex-grow: 2;
             
         }
 
@@ -71,7 +69,7 @@
             grid-template-columns: 16px auto 16px;
         }
 
-        &.not{
+        &.contact{
          
             margin-bottom: 15px;
             @include md{
@@ -89,7 +87,7 @@
         &.subtotal{
             margin-bottom: 15px;
             @include md{
-                grid-area: subtotal;
+        
                 margin-bottom: 0;
             }
 
@@ -109,6 +107,8 @@
         @include md{
             grid-area: contact;
         }
+
+        
 
         form{
             display: flex;
@@ -131,3 +131,27 @@
         }
 }
 
+.summary-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". content . "
+    ;
+}
+
+.totals{
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:totals;
+        ;
+    }
+}
+
+.lefty{
+    text-align:left;
+}
+
+.righty{
+    text-align:right;
+}

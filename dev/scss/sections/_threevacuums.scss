@@ -6,8 +6,8 @@
 .threevacuums{
 
     margin: 15px;
-    padding-left: 20px;
-    display: grid; 
+    padding-left: 20px; 
+   
     @include md{
         margin: 30px 0 30px 0; 
     }
@@ -51,6 +51,7 @@
             
             p{
                 color: #86858C;
+               
             }
 
             
@@ -59,18 +60,29 @@
         }
 
         &.cordless{
-            margin-bottom: 15px;
-            @include md{
-                grid-area: cordless;
-                margin-bottom: 0;
-            }
+                
+            &.container{
+                margin-bottom: 15px;
+                @include md{
+                    grid-area: cordless;
+                    margin-bottom: 0;
+                }
 
-            h2{
-                color:#3C394A;
-            }
-            
-            p{
-                color: #86858C;
+                h2{
+                    color:#3C394A;
+                }
+                
+                p{
+                    color: #86858C;
+                }
+
+                span{
+                    img{
+                        flex-grow:2;
+                        display:flex;
+                        justify-content:end;
+                    }
+                }
             }
 
             
@@ -90,6 +102,7 @@
             
             p{
                 color: #86858C;
+               
             }
            
         
@@ -115,3 +128,5 @@
            transition: 0.5s;
    }
 }
+
+ 

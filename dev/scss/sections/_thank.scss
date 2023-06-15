@@ -2,47 +2,74 @@
     Typography
 ============= */
 .grey-box-three{
+    grid-area:shipped;
     border:1px solid $lightgrey;
     background-color: $lightgrey;
     border-radius: 8px;
     width: 100%;
     padding: 10px 10px;
-    display: center;
+    
+    
     
      
     
 }
 
+.white-box{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    ".thank."
+    ;
+
+    border:1px solid white;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 50px;
+    
+    
+    
+     
+    
+}
+
+.subtotals{
+    text-align:left;
+}
+
+.numbers{
+    text-align:right;
+}
+
 .thank{
+    text-align:center;
     margin: 15px;
 
-    @include md{
-        margin: 30px 0 30px 0; 
-    }
 
     @include md{
         display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 15% auto;
         grid-template-areas: 
-        "recieved shipped delivered"
+        ".shipped."
         ;
     }
 
-    @include xl{
-        grid-template-columns: auto 570px 570 px auto;
-    }
-
-    @include xxl{
-        grid-template-columns: auto 660px 660px auto;
-    }
 
 }
 
 .container{
+    text-align:center;
+    margin-right:20px;
 
-    @include xl{
-        grid-template-columns: 16px auto 16px;
+    @include md{
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "recieved shipped delivered"
+        ;
+       
     }
+
 
     &.recieved{
      

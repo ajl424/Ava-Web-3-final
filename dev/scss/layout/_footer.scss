@@ -2,6 +2,12 @@
     Footer
 ============= */
 footer{
+    margin:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "products support"
+    "products about";
 
     background-color: white;
     padding-top: 20px;
@@ -10,8 +16,19 @@ footer{
         list-style:none;
     }
 
+    gap: 20px;
 
+    h3{
+        font-size: 18px;
+        color:#676573;
+    }
+
+    p{
     
+        font-size: 18px;
+        color:#676573;
+        
+    }
 
     .content{
         
@@ -32,17 +49,7 @@ footer{
             "products support about";
         }
 
-        h3{
-            font-size: 18px;
-            color:#676573;
-        }
 
-        p{
-        
-            font-size: 18px;
-            color:#676573;
-            
-        }
 
         .products .support{
 
@@ -62,6 +69,7 @@ footer{
                 p{
                 
                     font-size: 18px;
+                    margin-bottom: 15px;
                     color:#676573;
                     
                     span{
@@ -88,6 +96,7 @@ footer{
 
             @include md{
                 grid-area: products;
+                
             }
 
             @include lg{
@@ -192,5 +201,4 @@ footer{
         }
     
     }
-
 }

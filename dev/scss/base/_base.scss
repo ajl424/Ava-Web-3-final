@@ -133,7 +133,16 @@ button{
     background-color: $lightgrey;
     border-radius: 5px;
     padding: 10px 10px;
-    width: 120%;
+    width:90%;
+
+    p{
+        margin-bottom:10px;
+    }
+
+    img{
+        padding-left:20px;
+        padding-right:20px;
+    }
      
     
     
@@ -145,6 +154,43 @@ button{
     margin: 25px 0 25px 0;
 }
 
+.border-top{
+    border-top: 2px solid #C4C3C8; 
+    margin: 25px 0 25px 0;
+}
 
-  
-  
+.grey-circles{
+    padding-top:20px;
+}
+
+.arrowz{
+    padding:5px;
+}
+
+.join{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". content . "
+    ;
+
+    border-top:2px solid #C4C3C8;
+    border-width: 20%;
+    flex-grow:2;
+    display:flex;
+    margin-bottom: 200px;
+
+    h3{
+        color:#676573;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    img{
+        display:inline-block;
+
+    }
+
+}

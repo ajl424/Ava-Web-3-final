@@ -3,8 +3,9 @@
 ============= */
 
 .petandnonpet{
+    text-align:center;
     margin: 0 0 20px 0;
-
+    padding-top: 15px;
     
     p{
         color: #676573;
@@ -64,7 +65,7 @@
             display: grid;
             grid-template-columns: 15px auto 15px;
             grid-template-areas: 
-            " box-1 box-2";
+            " . box-grid.";
             
         }
 
@@ -77,7 +78,7 @@
         }
 
         ul.box-grid{
-
+            grid-area: box-grid;
             list-style: none;
             padding-left: 20px;
 
@@ -86,7 +87,7 @@
             gap: 15px;
 
             @include md{
-                grid-area: petnonpet;
+                grid-area: box-grid;
                 display: grid;
                 grid-template-columns: repeat(4,1fr);
                 grid-template-areas: 
@@ -174,8 +175,10 @@
 }
 
 
-
-
-
+.arrowz{
+    img{
+        padding-left:50px;
+    }
+}
 
 

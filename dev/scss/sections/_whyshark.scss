@@ -2,9 +2,11 @@
     Typography
 ============= */
 .whyshark{
+    text-align:center;
     background-color: $lightgrey;
     padding-top: 20px;
     margin: 0 0 20px 0;
+   
 
     @include md{
         margin: 30px 0 40px 0;
@@ -19,6 +21,7 @@
             font-size: 60px;
             color: #3C394A;
             padding: 10px 0 10px 0;
+            
     
             @include lg{
                 font-size: 70px;
@@ -32,7 +35,6 @@
     }
 
     .whyshark-icons{
-
         @include md{
             display: grid;
             grid-template-columns: 15px auto 15px;

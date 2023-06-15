@@ -47,7 +47,8 @@
             margin-bottom: 15px;
             font-size: 16px;
             border-radius: 6px;
-            display: flex; 
+            display: flex;
+            width:60%;
             
             @include lg{
                 width:60%;

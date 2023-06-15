@@ -1414,6 +1414,7 @@ footer .content .about ul li a i {
   font-size: 16px;
   border-radius: 6px;
   display: flex;
+  width: 60%;
 }
 @media (min-width: 992px) {
   .checkout ul input {
